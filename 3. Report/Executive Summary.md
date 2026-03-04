@@ -1,26 +1,26 @@
 **# 📄 Executive Summary**
 
-# 📊 Modelo Predictivo para Anticipar Eventos de Arenamiento en Pozos Petroleros
+# 📊 Modelo Predictivo para Estimar el Potencial Productivo en Pozos de Shale Gas
 
 ## 🎯 Objetivo del Proyecto
-Desarrollar una estrategia de optimización para anticipar eventos de arenamiento en pozos petroleros, utilizando técnicas de análisis estadístico y aprendizaje automático. El modelo considera la historia de producción, condiciones operativas y características geológicas.
+Analizar variables petrofísicas y de completamiento en pozos shale para identificar patrones mediante reducción dimensional y clustering, y desarrollar un modelo predictivo que estime el potencial productivo y apoye la priorización de zonas con mayor rendimiento. 
 
 ## 🗂️ Fuente de Datos
-- **Archivo principal:** `sand_production_data.csv`
+- **Archivo principal:** `SPE_shale_original - copia.xlsx`
 - **Ubicación:** Carpeta `1. Data`
-- **Contenido:** Variables geomecánicas, de flujo y operativas relevantes para el fenómeno de arenamiento.
+- **Contenido:** Datos básicos de yacimiento, completamiento y producción
 
 ## 🛠️ Tecnologías Utilizadas
-- Python 3.10.19  
+- Python 3.12.12  
 - pandas, numpy  
 - matplotlib, seaborn  
-- scikit-learn  
-- Visual Studio Code  
+- scikit-learn 
+
 
 ## 🧪 Metodología
 1. **Preparación de datos:** limpieza, transformación y documentación de variables.
-2. **Análisis exploratorio:** visualización y comprensión de patrones.
-3. **Modelado predictivo:** entrenamiento de modelos supervisados.
+2. **Análisis exploratorio:** Revisión de correlaciones, estadísticas descriptivas, detección de atípicos y PCA preliminar.
+3. **Modelado predictivo:** entrenamiento de modelos supervisados y no supervisados
 4. **Análisis del problema:** interpretación de resultados y validación.
 5. **Resultados:** métricas de desempeño, importancia de variables, predicciones.
 
@@ -28,23 +28,28 @@ Desarrollar una estrategia de optimización para anticipar eventos de arenamient
 
 ## 📚 Referencias
 
-1. Análisis del impacto del componente geológico en el arenamiento de pozos productores de petróleo
-Autora: María Cristina Mancilla Gómez
+**1. Domain adaption and physical constraints transfer learning for shale gas production**
 
-Institución: Universidad Nacional de Colombia, Facultad de Minas
+Autor: Z. Yang, L. Gou, C. Min, D. Yi, X. Li, G. Wen
+Institución: Publicación académica en arXiv
 
-Resumen: Estudia cómo las características geológicas influyen en el arenamiento en un campo del Valle Medio del Magdalena (VMM). Incluye ilustraciones, gráficas y análisis geomecánico.
-
-
-2. Aspectos Geomecánicos para Predecir Arenamiento en Pozos de Hidrocarburos
-Institución: Universidad Industrial de Santander (UIS)
-
-Resumen: Presenta un modelo analítico para predecir el arenamiento en yacimientos de baja consolidación. Analiza erosión, taponamientos y pérdida de productividad.
+Resumen: Propone un enfoque de transfer learning que integra restricciones físicas para mejorar la predicción de producción en pozos de shale gas, combinando datos reales y modelos físico informados.
 
 
-3. Aplicación de la Geomecánica para la Predicción de Arenamiento en Pozos Petroleros
-Autora: Mónica Martínez Lázaro
+**2. SPE/SEG Research Portal – Shale Resources**
 
-Institución: UNAM, Facultad de Ingeniería
+Autor: Society of Petroleum Engineers (SPE) / Society of Exploration Geophysicists (SEG)
+Institución: SPE–SEG Research Portal
 
-Resumen: Informe profesional que aplica principios geomecánicos para anticipar eventos de arenamiento en pozos, con enfoque práctico desde la ingeniería civil.
+Resumen: Repositorio especializado que recopila investigaciones técnicas sobre yacimientos shale, incluyendo estudios de fracturamiento, caracterización geofísica y análisis de productividad en gas no convencional.
+
+
+**3. Shale Analytics: Making Production and Operational Decisions Based on Facts**
+
+Autor: S. D. Mohaghegh, R. Gaskari, M. Maysami
+Institución: SPE Hydraulic Fracturing Technology Conference
+
+Resumen: Introduce técnicas de analítica avanzada para optimizar decisiones operativas y predictivas en pozos de shale gas, utilizando datos reales de fracturamiento y producción.
+
+
+
